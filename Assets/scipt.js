@@ -5,11 +5,13 @@ const descEL = document.querySelector('#desc');
 const tepEL = document.querySelector('#tep');
 
 buttonEL.addEventListener('click', function(){
- fetch('api.openweathermap.org/data/2.5/forecast?lat={lat}&appid=b059e3b9ba1555004206345a13c9cf24')
+  fetch('https://api.openweathermap.org/data/2.5/forecast?lat={lat}&appid=b059e3b9ba1555004206345a13c9cf24')
  .then(Response => Response.json())
- .then(data => console.log(data))
-
+ .then(data => {
+    const namevalue = data['name'];
+    const tempvalue = data['main']['temp'];
+    const descvalue =data ['weather'][0]['description'];
+ })
 
  .catch(err => alert('wrong city name!'))
-
 });
