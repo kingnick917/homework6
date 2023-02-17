@@ -42,3 +42,18 @@ input[type="submit"]{
 .display{
  text-align: center;
 }
+
+
+.cards{
+  border: 1px solid black;
+  max-width: 300px;
+  margin: 5px;
+  display: flexbox;
+}
+
+#weathercontainer{
+  display: flex;
+  flex-direction: row;
+  flex: -1;
+  order: 2;
+}
