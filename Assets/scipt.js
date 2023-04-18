@@ -15,7 +15,7 @@ buttonEL.addEventListener('click',function(){
    const lat =data[0].lat
    const long = data[0].lon
 
-   fetch(`http://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=${lat}&lon=${long}&appid=b059e3b9ba1555004206345a13c9cf24`)
+   fetch(`https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=${lat}&lon=${long}&appid=b059e3b9ba1555004206345a13c9cf24`)
    .then(Res => Res.json())
    .then(datad => {
     console.log(datad)
