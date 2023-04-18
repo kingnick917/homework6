@@ -7,7 +7,7 @@ const weathercontainerEL = document.querySelector ('#weathercontainer');
 
 buttonEL.addEventListener('click',function(){
    const cityname = inputvalueEL.value;
-  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityname},CA,US&appid=b059e3b9ba1555004206345a13c9cf24`)
+  fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityname},CA,US&appid=b059e3b9ba1555004206345a13c9cf24`)
  .then(Response => Response.json())
  .then(data => {
   

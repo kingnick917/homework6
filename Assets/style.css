@@ -49,6 +49,7 @@ input[type="submit"]{
   max-width: 300px;
   margin: 5px;
   display: flexbox;
+  grid-row: 2 / span 3;
 }
 
 #weathercontainer{
