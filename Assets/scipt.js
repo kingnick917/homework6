@@ -4,7 +4,6 @@ const nameEL = document.querySelector('.Name');
 const descEL = document.querySelector('.desc');
 const tepEL = document.querySelector('.tep');
 const weathercontainerEL = document.querySelector ('#weathercontainer');
-
 buttonEL.addEventListener('click',function(){
    const cityname = inputvalueEL.value;
   fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityname},CA,US&appid=b059e3b9ba1555004206345a13c9cf24`)

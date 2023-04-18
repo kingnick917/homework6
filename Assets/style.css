@@ -36,11 +36,15 @@ input[type="submit"]{
   font-size: 20px;
   border: none;
   border-radius:  3px; 
+  
 }
 
 
 .display{
- text-align: center;
+  text-align: center;
+  width:100%;
+  min-width:1000px;
+  height: 100px;;
 }
 
 
